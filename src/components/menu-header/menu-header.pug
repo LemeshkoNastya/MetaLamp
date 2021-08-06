@@ -1,0 +1,25 @@
+
+- 
+    var arrayContentLink = [
+        {name: 'О нас', unfold: false},
+        {name: 'Услуги', unfold: true},
+        {name: 'Вакансии', unfold: false},
+        {name: 'Новости', unfold: false},
+        {name: 'Соглашения', unfold: true}
+    ]
+
+mixin link(objectLink)
+    li.list__item
+        if objectLink.unfold
+            a.list__link
+                = objectLink.name
+                img(src='../../assets/icons/more.svg', alt='icon more', class='list__image')
+        else
+            a.list__link= objectLink.name
+
+nav.menu
+    ul.list
+        each contenLink in arrayContentLink
+            +link(contenLink)
+
+//- Active link add class 'list__link_active'

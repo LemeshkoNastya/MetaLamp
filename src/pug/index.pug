@@ -1,10 +1,9 @@
-doctype html
-html(lang="en")
-    head
-        meta(charset="UTF-8")
-        meta(http-equiv="X-UA-Compatible", content="IE=edge")
-        meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        title TOXIN
-        link(rel='icon', href='../favicon.ico')
-    body 
-        h1.title Project TOXIN
+extends base/base
+
+block variables
+    - var pageLang = 'ru';
+    - var pageTitle = 'TOXIN';
+
+block content
+    include ../components/menu-header/menu-header
+        

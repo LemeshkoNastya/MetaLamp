@@ -58,7 +58,7 @@
         font-size: 12px;
     }
     @if $font == body {
-        @include font(montserrat-bold);
+        @include font(montserrat-regular);
         font-size: 14px;
         line-height: 24px;
     }

@@ -98,14 +98,14 @@ module.exports = {
                 //     from: path.resolve(environment.paths.source, 'assets/img', ''),
                 //     to: path.resolve(environment.paths.output, 'assets/img', ''),
                 // },
-                // {
-                //     from: path.resolve(environment.paths.source, 'assets/icons', ''),
-                //     to: path.resolve(environment.paths.output, 'assets/icons', ''),
-                // },
-                // {
-                //     from: path.resolve(environment.paths.source, 'assets/fonts', ''),
-                //     to: path.resolve(environment.paths.output, 'assets/fonts', ''),
-                // },
+                {
+                    from: path.resolve(environment.paths.source, 'assets/icons', ''),
+                    to: path.resolve(environment.paths.output, 'assets/icons', ''),
+                },
+                {
+                    from: path.resolve(environment.paths.source, 'assets/fonts', ''),
+                    to: path.resolve(environment.paths.output, 'assets/fonts', ''),
+                },
                 {
                     from: path.resolve(environment.paths.source, '', 'favicon.ico'),
                     to: path.resolve(environment.paths.output, '', 'favicon.ico'),
