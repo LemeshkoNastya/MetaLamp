@@ -1,4 +1,23 @@
-block logo
+mixin logo
     .logo
         img(src='../../assets/icons/logo-icon.svg', alt="icon logo")
         img(src='../../assets/icons/logo-name.svg', alt="name logo")
+
+mixin button(nameButton, classButton)
+    if classButton
+        button.button(class=classButton)
+            span.button__text= nameButton
+    else
+        button.button 
+            span.button__text= nameButton
+
+mixin buttonColor(nameButton, classButton)
+    if classButton
+        button.button-color(class=classButton)= nameButton
+    else
+        button.button-color= nameButton
+
+mixin user(name)
+    .user 
+        .line
+        span.user__name= name
