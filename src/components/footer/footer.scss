@@ -1,0 +1,103 @@
+.footer {
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        padding: 104px 140px 100px;
+    }
+
+    &__text {
+        max-width: 260px;
+        margin-top: 20px;
+        @include typography(body);
+        color: $color-dark-shade-75;
+    }
+
+    &__navigation {
+        display: flex;
+    }
+
+    &__links {
+        &:nth-child(2) {
+            margin-left: 57px;
+        }
+
+        &:nth-child(3) {
+            margin-left: 92px;
+        }
+    }
+
+    &__title {
+        display: inline-block;
+        margin-bottom: 21px;
+        @include typography(h3);
+        color: $color-dark-shade;
+        text-transform: uppercase;
+    }
+
+    &__subscription {
+        
+        .footer__text {
+            margin-top: 0;
+        }
+    }
+
+    &__form {
+        width: 260px;
+        height: 44px;
+        margin-top: 20px;
+        background: $color-white;
+        border: 1px solid $color-dark-shade-25;
+        border-radius: 4px;
+    }
+
+    &__input {
+        margin: 8px 0px 8px 15px;
+        border: none;
+        outline: none;
+        &::placeholder {
+            @include typography(body);
+            color: $color-dark-shade-25;
+        }
+    }
+
+    &__button {
+        width: 44px;
+        height: 42px;
+        background: $color-white;
+        border: none;
+        outline: none;
+    }
+
+    &__line {
+        width: 100%;
+        height: 1px;
+        background: $color-dark-shade-25;
+    }
+
+    &__copyright {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 23px 140px;
+
+        .footer__text {
+            max-width: 380px;
+        }
+    }
+
+    &__icons {
+        display: flex;
+        justify-content: space-between;
+        width: 112px;
+    }
+
+    .list {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .list__item {
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+}

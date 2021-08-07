@@ -1,6 +1,6 @@
 
 - 
-    var arrayContentLink = [
+    var arrayLinkHeader = [
         {name: 'О нас', unfold: false},
         {name: 'Услуги', unfold: true},
         {name: 'Вакансии', unfold: false},
@@ -19,7 +19,7 @@ mixin link(objectLink)
 
 nav.menu
     ul.list
-        each contenLink in arrayContentLink
+        each contenLink in arrayLinkHeader
             +link(contenLink)
 
 //- Active link add class 'list__link_active'
