@@ -2,6 +2,10 @@
     display: flex;
     justify-content: space-between;
     width: 106px;
+
+    img {
+        cursor: pointer;
+    }
 }
 
 .button {
@@ -14,6 +18,7 @@
     @include typography(h3);
     color: $color-purple;
     text-transform: uppercase;
+    cursor: pointer;
 
     &__text {
         display: inline-block;
@@ -28,12 +33,17 @@
 
 .button-color {
     padding: 14px 20px;
-    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    background: linear-gradient(180deg, $color-purple 0%, $color-blue 100%);
     border-radius: 22px;
     border: none;
     @include typography(h3);
     color: $color-white;
     text-transform: uppercase;
+    cursor: pointer;
+
+    &:hover {
+        background: linear-gradient(180deg, $color-purple-50 0%, $color-blue-50 100%);
+    }
 }
 
 .user {
