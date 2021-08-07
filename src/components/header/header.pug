@@ -3,14 +3,16 @@ include ../elements/elements
 - var button = 'Войти';
 - var buttonColor = 'Зарегистрироваться';
 - var name = 'Юлий Цезарь';
-- var authorization = false;
+- var authorization = true;
 
 header.header
     +logo
     .header__info
         include ../menu-header/menu-header
         if authorization
-            +user(name) 
+            .user 
+                .line
+                span.user__name= name
         else
             +button(button, 'header__button')
             +buttonColor(buttonColor, 'header__button')
